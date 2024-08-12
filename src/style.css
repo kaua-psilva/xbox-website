@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D100C;
+  max-width: 98vw;
+  width: 100%;
+  height: 100vh;
+}
+
+header #nav-head {
+  max-width: 90%;
+  margin: auto;
+  height: 40px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 32px;
+}
+header #nav-head button {
+  background-color: #9BF00B;
+  font-size: 12px;
+  font-weight: 700;
+  width: 196px;
+  height: 39px;
+  font-family: "Inter";
+  cursor: pointer;
+  color: #0C0C0C;
+  border: none;
+}
+header #nav-head nav {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+header #nav-head nav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1%;
+  font-weight: 600;
+  font-size: 14px;
+}
+header #nav-head img {
+  width: 112px;
+  animation: pulseXbox linear 1s infinite;
+}
+
+main {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+}
+main #text-hero-content {
+  margin-top: 219px;
+  line-height: 84px;
+  margin-bottom: 50px;
+}
+main #text-hero-content h1 {
+  font-size: 72px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+main #text-hero-content p {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #9BF00B;
+  margin-bottom: 100px;
+}
+main #controler-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 90px;
+}
+main #controler-content #controler-left-content {
+  width: 570px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  line-height: 70px;
+}
+main #controler-content #controler-left-content h1 {
+  font-size: 64px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+main #controler-content #controler-left-content h1 span {
+  color: #9BF00B;
+}
+main #controler-content #controler-left-content p {
+  color: #C0C0C0;
+  line-height: 33px;
+  text-align: left;
+}
+main #games-content {
+  margin: 150px auto 100px auto;
+  display: flex;
+}
+main #games-content .games {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #games-content img {
+  width: 370px;
+  margin: auto;
+  display: flex;
+}
+main #perguntas h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+main #perguntas h1 span {
+  color: #9BF00B;
+}
+main #perguntas details {
+  width: 50%;
+}
+main #perguntas #summary-question {
+  margin-top: 20px;
+  padding-bottom: 80px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 500;
+}
+main #perguntas #summary-question details[open] summary::after {
+  transform: rotate(-90deg);
+}
+main #perguntas #summary-question details p {
+  color: #C0C0C0;
+  text-align: left;
+  margin-top: 10px;
+  transition: 0.7s ease-in-out;
+}
+main #perguntas #summary-question summary {
+  font-size: 24px;
+  list-style: none;
+  text-align: left;
+  display: flex;
+  cursor: pointer;
+}
+main #perguntas #summary-question summary::after {
+  content: ">";
+  display: flex;
+  text-align: center;
+  margin-left: 30px;
+  color: #9BF00B;
+  transform: rotate(90deg);
+  transition: 0.2s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

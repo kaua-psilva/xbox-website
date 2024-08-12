@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D100C;
+    max-width: 98vw;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    
+    #nav-head{
+        max-width: 90%;
+        margin: auto;
+        height: 40px;
+        font-family: 'Inter';
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding: 32px;
+        button{
+            background-color: #9BF00B;
+            font-size: 12px;
+            font-weight: 700;
+            width: 196px;
+            height: 39px;
+            font-family: 'Inter';
+            cursor: pointer;
+            color: #0C0C0C;
+            border: none;
+        }
+        nav{
+            width: 100%;
+            display: flex;  
+            gap: 40px;
+            a{
+                color: white;
+                text-decoration: none;
+                letter-spacing: 1%;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+        img{
+            width: 112px;
+            animation: pulseXbox linear 1s infinite;
+        }
+        }
+    }
+main{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: "Inter";
+    #text-hero-content{
+        margin-top: 219px;
+        line-height: 84px;
+        margin-bottom: 50px;
+        h1{
+            font-size: 72px;
+            font-family: "Inter";
+            font-weight: 600;
+        }
+        p{ 
+            font-size: 24px;
+            letter-spacing: 5px;
+            font-weight: 700;
+            color: #9BF00B;
+            margin-bottom: 100px
+        }
+    }
+    #controler-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 90px;
+        #controler-left-content{
+            width: 570px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            line-height: 70px;
+            h1{
+                font-size: 64px;
+                text-align: left;
+                margin-bottom: 20px;
+                span{
+                    color: #9BF00B;
+                }
+            }
+            p{
+                color: #C0C0C0;
+                line-height: 33px;
+                text-align: left;
+            }
+        }
+    }
+    #games-content{
+        margin:150px auto 100px auto;
+        display: flex;
+        .games{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 370px;
+            margin: auto;
+            display: flex;
+        }
+    }
+    #perguntas{
+        h1{
+            font-size: 48px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 70px;
+            span{
+                color: #9BF00B;
+            }
+        }
+        details{
+            width: 50%;
+        }
+        #summary-question{
+            margin-top: 20px;
+            padding-bottom: 80px;
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            font-family: 'Inter';
+            font-weight: 500;
+            details[open] summary::after {
+                transform: rotate(-90deg);
+            }
+            details{
+                p{
+                    color: #C0C0C0;
+                    text-align: left;
+                    margin-top: 10px;
+                    transition: .7s ease-in-out;
+                }
+            }
+            summary{
+                font-size: 24px;
+                list-style: none;
+                text-align: left;
+                display: flex;
+                cursor: pointer;
+                &::after{
+                    content: '>';
+                    display: flex;
+                    text-align: center;
+                    margin-left: 30px;
+                    color: #9BF00B;
+                    transform: rotate(90deg);
+                    transition: .2s ease-in-out;
+                }
+            }
+        }
+    }
+}
